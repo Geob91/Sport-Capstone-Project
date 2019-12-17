@@ -2,6 +2,8 @@
 
 ## Overview
 
+### My project will be about sport I enjoy, The first sport will be Rugby and then if i have time in this capstone I will move onto Soccer. The User will fill out a quick quiz, this will then suggest a potential position and also give them famous players in that position. Each description will also give links of Rugby clubs in the area.
+
 This template repository contains several opinionated, 'starter' files and settings to help Savvy Coder students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
 
 In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
