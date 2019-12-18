@@ -6,6 +6,9 @@ html{
 }
 
 header{
+  text-align: center;
+  background-color:var(--primary-color);
+  padding:0.2rem;
 
 }
 
@@ -17,17 +20,24 @@ body{
 
 h1{
   display: flex;
-  font-size: 4.5em;
+  font-size: 3.5em;
   justify-content: center;
 
 }
 
 nav ul{
   display: flex;
-  font-size: 1.728em;
+  font-size: 0.7em;
   justify-content:space-around;
   list-style-type: none;
+}
 
+ul{
+  padding:0;
+}
 
+figure,img{
+  max-width: 100%;
+  border-radius: 50%;
 }
 
