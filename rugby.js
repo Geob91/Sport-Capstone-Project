@@ -299,14 +299,13 @@ const rugbyPlayers = [
 ];
 
 console.log(rugbyPlayers);
-function getCountry(name, Nationality) {
-  return name.filter(name => name.Nationality === "American");
+function getCountry(name, nationality) {
+  return name.filter(name => name.Nationality === nationality);
 }
 
-function getPosition(name, Position) {
-  return name.filter(name => name.Position === "Winger");
+function getPosition(name, position) {
+  return name.filter(name => name.Position === position);
 }
-//console.log(getCountry(rugbyPlayers));
-console.log(getPosition(rugbyPlayers));
-
+//console.log(getCountry(rugbyPlayers, "English"));
+console.log(getPosition(rugbyPlayers, "Center"));
 //console.log(rugbyPlayers)
