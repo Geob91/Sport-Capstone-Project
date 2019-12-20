@@ -46,6 +46,10 @@ ul{
   text-decoration: none;
 }
 
+.flex{
+  display:flex;
+}
+
 @media screen and (min-width: 885px){
   #hero{
     background:url(http://cdn3.whatculture.com/images/2015/08/EeB5ATUI-600x338.jpg);
