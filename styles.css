@@ -50,7 +50,9 @@ ul{
   #hero{
     background:url(http://cdn3.whatculture.com/images/2015/08/EeB5ATUI-600x338.jpg);
     height: 40vh;
-    width:100vh;
+    width:125vh;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 }
