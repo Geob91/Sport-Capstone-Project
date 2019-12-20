@@ -36,6 +36,25 @@ ul{
   padding:0;
 }
 
+.button{
+  padding:0.5rem;
+  background-color:var(--secondary-color);
+  border-radius: 3px;
+}
+
+.button a{
+  text-decoration: none;
+}
+
+@media screen and (min-width: 885px){
+  #hero{
+    background:url(http://cdn3.whatculture.com/images/2015/08/EeB5ATUI-600x338.jpg);
+    height: 40vh;
+    width:100vh;
+  }
+
+}
+
 figure,img{
   max-width: 100%;
   border-radius: 50%;
