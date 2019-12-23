@@ -3,6 +3,7 @@ html{
   --secondary-color:#FF9671;
   --primary-text-color:#C34A36;
   --secondary-text-color:#B740AD;
+  --extra-color:#85B41C
 }
 
 header{
@@ -15,6 +16,7 @@ header{
 body{
   font-family: 'Indie Flower', cursive;
   color:var(--primary-text-color);
+  background-color: var(--extra-color);
 
 }
 
@@ -48,24 +50,15 @@ ul{
 
 .flex{
   display:flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 50px;
+  font-size: 0.75em;
 
 }
 
-@media screen and (min-width: 885px){
-  #hero{
-    height: 40vh;
-    width:125vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
-}
 
-img{
-  border-radius: 10%;
-  width:200px;
-  height:150px;
+
+figure,img{
+  max-width: 100%;
+
 }
