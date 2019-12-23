@@ -48,11 +48,14 @@ ul{
 
 .flex{
   display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50px;
+
 }
 
 @media screen and (min-width: 885px){
   #hero{
-    background:url(http://cdn3.whatculture.com/images/2015/08/EeB5ATUI-600x338.jpg);
     height: 40vh;
     width:125vh;
     background-repeat: no-repeat;
@@ -61,8 +64,8 @@ ul{
 
 }
 
-figure,img{
-  max-width: 100%;
-  border-radius: 50%;
+img{
+  border-radius: 10%;
+  width:200px;
+  height:150px;
 }
-
