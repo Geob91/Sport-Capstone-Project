@@ -60,5 +60,7 @@ ul{
 figure, img{
   max-width: 100%;
   justify-content: flex-start;
+  width: 33vw;
+
 
 }
