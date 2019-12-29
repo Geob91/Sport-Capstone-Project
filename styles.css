@@ -13,6 +13,9 @@ header{
 
 }
 
+
+
+
 body{
   font-family: 'Indie Flower', cursive;
   color:var(--primary-text-color);
@@ -24,7 +27,10 @@ h1{
   display: flex;
   font-size: 3.5em;
   justify-content: center;
+}
 
+h2{
+  text-align: center;
 }
 
 nav ul{
@@ -57,10 +63,13 @@ ul{
 
 
 
-figure, img{
+figure img{
   max-width: 100%;
   justify-content: flex-start;
   width: 33vw;
 
+}
 
+#rules{
+  text-align: center;
 }
