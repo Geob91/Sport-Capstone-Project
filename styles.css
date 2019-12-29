@@ -73,3 +73,13 @@ figure img{
 #rules{
   text-align: center;
 }
+
+form{
+  display:flex;
+  flex-direction: column;
+  font-family: 'Indie Flower', cursive;
+
+}
+#enter{
+  ;
+}
