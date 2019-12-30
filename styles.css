@@ -34,7 +34,7 @@ h2{
 }
 p{
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 nav ul{
@@ -46,6 +46,10 @@ nav ul{
 
 ul{
   padding:0;
+}
+figcaption{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .button{
@@ -63,8 +67,9 @@ ul{
   justify-content: space-between;
   font-size: 0.75em;
   text-align: center;
-}
+  border-style: inset;
 
+}
 
 
 
@@ -72,6 +77,9 @@ figure img{
   max-width: 100%;
   justify-content: flex-start;
   width: 33vw;
+  box-sizing: border-box;
+  height:200px;
+
 
 }
 
@@ -85,6 +93,4 @@ form{
   font-family: 'Indie Flower', cursive;
 
 }
-#enter{
-  ;
-}
+
