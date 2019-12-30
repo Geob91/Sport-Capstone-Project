@@ -45,6 +45,11 @@ nav ul{
   list-style-type: none;
 }
 
+ol li{
+  text-align: center;
+  font-size:1 rem;
+}
+
 ul{
   padding:0;
 }
@@ -86,6 +91,8 @@ figure img{
 
 #rules{
   text-align: center;
+  font-size:20px;
+
 }
 
 form{
@@ -94,4 +101,14 @@ form{
   font-family: 'Indie Flower', cursive;
 
 }
+#rugbyvid{
+  align-content: center;
+  padding-top: 2rem;
+}
+.rules-site{
+text-align: center;
+font-size: 20px;
+
+}
+
 
