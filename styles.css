@@ -103,6 +103,24 @@ form{
   font-family: 'Indie Flower', cursive;
 
 }
+.rugbyform{
+  display:flex;
+  flex-flow:column wrap;
+  align-items:center;
+}
+
+.rugbyform label{
+  margin: 5px 10px 5px 0;
+}
+
+.rugbyform input{
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding:10px;
+  border:1px;
+}
+
+
 #rugbyvid{
   align-content: center;
   padding-top: 2rem;
