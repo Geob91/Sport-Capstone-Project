@@ -55,7 +55,10 @@
     </div>
     <div>
       <label for="Weight">Weight llbs:</label>
-      <input type ="number" name="Weight" id ="Weight" placeholder ="Llbs">
+      <input type ="number" name="Weight" id ="Weight" placeholder ="Llbs" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)"/>
+      <input name="Kg" placeholder="Kg">
+      <span id="outputGrams"></span>
+    </input>
     </div>
     <div>
       <label for="Speed">Speed:</label>
@@ -81,6 +84,9 @@
 <script>
   function LengthConverter(valNum){
     document.getElementById("outputFeet").innerHTML=valNum*0.032808;
+  }
+  function weightConverter(valNum){
+    document.getElementById("outputGrams").innerHTML =valNum /2.205
   }
 </script>
 

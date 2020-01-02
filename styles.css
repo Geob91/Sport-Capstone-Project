@@ -86,12 +86,17 @@ footer{
 .flex{
   display:flex;
   justify-content: space-between;
+  padding:0.5rem;
   max-width: 100%;
   font-size: 0.75em;
   text-align: center;
-  border-style: inset;
+  border-style:double ;
+  border-width:5px;
   flex-wrap: wrap;
+  margin:10px;
+  margin-bottom: 0px;
 }
+
 
 .flex div:hover{
   background-color: blue;
