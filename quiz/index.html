@@ -62,8 +62,6 @@
             name="heightCm"
             id="height-cm"
             placeholder="cm"
-            oninput="LengthConverter(this.value)"
-            onchange="LengthConverter(this.value)"
           />
         </div>
 
@@ -71,14 +69,7 @@
 
         <div>
           <label for="weight">Weight lbs:</label>
-          <input
-            type="number"
-            name="weight"
-            id="weight"
-            placeholder="lbs"
-            oninput="weightConverter(this.value)"
-            onchange="weightConverter(this.value)"
-          />
+          <input type="number" name="weight" id="weight" placeholder="lbs" />
         </div>
 
         <input name="kg" placeholder="kg" />
