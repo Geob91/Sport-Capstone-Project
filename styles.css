@@ -25,8 +25,10 @@ main {
   background-size: cover;
 }
 
-main, background-image{
-  opacity:;
+main,
+background-image {
+  /* TODO{george}: Resolve missing opacity value. */
+  /* opacity: ; */
 }
 
 h1 {
@@ -162,6 +164,8 @@ form {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  /* TODO{george}: Resolve bad value for vertical-align (https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) */
+  /* vertical-align: center; */
   width: 100%;
 }
 
@@ -191,6 +195,8 @@ form {
 }
 
 /* TODO{george}: Complete this CSS. */
+/* .contact label {
+} */
 
 .contact input {
   border: 50px;
