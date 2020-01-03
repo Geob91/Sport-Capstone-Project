@@ -27,9 +27,8 @@ main{
   background-image: url("https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/7/2018/05/GettyImages-873170404-630x407.jpg");
 }
 
-main, background-image{
-  opacity:;
-}
+
+
 
 h1{
   display: flex;
@@ -60,7 +59,7 @@ p{
 
 nav ul{
   display: flex;
-  font-size: 1em;
+  font-size: 1.25em;
   justify-content:space-around;
   list-style-type: none;
   background: #FEFEDF;
