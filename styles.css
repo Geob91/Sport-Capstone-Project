@@ -202,7 +202,7 @@ form {
 
 .contact input {
   border: 50px;
-  display:block;
+  display: inline-block;
   margin: 5px 20px 5px 5px;
   padding: 10px;
   vertical-align: baseline;
