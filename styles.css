@@ -29,11 +29,7 @@ main {
     url("https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/7/2018/05/GettyImages-873170404-630x407.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
-  background: rgba(197, 190, 295, 0.1);
-=======
   padding: 1rem;
->>>>>>> 7a4acfddf3ca380b5e806a617b3baf85a333d5c6
 }
 
 h1 {
@@ -86,6 +82,10 @@ figcaption {
 }
 
 footer {
+  background-color: var(--secondary-color);
+}
+
+.endpage{
   background-color: var(--secondary-color);
   color: black;
   font-size: 20px;
