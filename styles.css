@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  /* TODO{george}: Play with gradients.  */
+  /* TODO{george}: Play with gradients. (https://mycolor.space/gradient) (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds) */
   background-image: linear-gradient(
       to bottom,
       rgba(245, 246, 252, 0.52),
