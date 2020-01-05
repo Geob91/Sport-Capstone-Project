@@ -29,6 +29,7 @@ main {
     url("https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/7/2018/05/GettyImages-873170404-630x407.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 1rem;
 }
 
 h1 {
