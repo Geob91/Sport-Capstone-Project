@@ -1,4 +1,5 @@
-` <main>
+export default `
+<main>
 <h2>About the Site</h2>
 <p>This site has been built to share my love of Rugby with you, my inspiration came about in the most recent <a href ="https://www.rugbyworldcup.com/" target="_blank">Rugby world cup</a>and how little people knew of the sport. My goal here is to get gather some more interest and possibly get some more people playing the sport. If you are interested in playing there is a short form to fill out to see what position you could play.To really get a good understanding of the position you are just going to have to try it out!&nbsp;<strong>Be warned! Rugby is not for the faint of heart!</strong>.So if the idea of tackling somebody or being tackled in the mud doesn't sound like fun to you this may not be your sport.</p>
 
@@ -65,4 +66,5 @@
     </a>
   </div>
 </div>
-</main>`;
+</main>
+`;
