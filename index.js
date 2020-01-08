@@ -1,30 +1,28 @@
 import { Header, Nav, Main, Footer } from "./components";
 
-import { Header, Nav, Main, Footer } from "./components";
-
 //console.log(Header, Footer, Main, Nav);
 
 const state = {
   Home: {
     heading: "Home"
   },
-  Form: {
-    heading: "Form"
+  TheRules: {
+    heading: "The Rules"
   },
-  Blog: {
-    heading: "Blog"
+  WhatPositionareyou: {
+    heading: "What Position are you?"
   },
-  Gallery: {
-    heading: "Gallery"
+  Contact: {
+    heading: "Contact me"
   }
 };
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
-${Header(st)}
-${Nav(st)}
-${Main(st)}
-${Footer(st)}`;
+${Header()}
+${Nav()}
+${Main()}
+${Footer()}`;
 
   document.querySelectorAll("nav a").forEach(link => {
     link.addEventListener("click", function(event) {
@@ -35,4 +33,3 @@ ${Footer(st)}`;
 }
 
 render();
-

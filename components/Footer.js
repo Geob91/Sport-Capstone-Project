@@ -1,4 +1,4 @@
-export default `
+export default () => `
 <footer class="endpage">
 <p>&copy SavvyCoders</p>
 <span class="fab fa-linkedin"></span>
