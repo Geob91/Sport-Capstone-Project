@@ -1,30 +1,17 @@
 import { Header, Nav, Main, Footer } from "./components";
 
-//console.log(Header, Footer, Main, Nav);
+import * as state from "./store";
 
-const state = {
-  Home: {
-    heading: "Home"
-  },
-  TheRules: {
-    heading: "The Rules"
-  },
-  WhatPositionareyou: {
-    heading: "What Position are you?"
-  },
-  Contact: {
-    heading: "Contact me"
-  }
-};
+//console.log(Header, Footer, Main, Nav);
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
-${Header()}
-${Nav()}
-${Main()}
-${Footer()}`;
+${Header(st)}
+${Nav(state.Links)}
+${Main(st)}
+${Footer(st)}`;
 
-  document.querySelectorAll("nav a").forEach(link => {
+  document.querySelectorAll("nav ul").forEach(link => {
     link.addEventListener("click", function(event) {
       event.preventDefault();
       render(state[event.target.textContent]);
