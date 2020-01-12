@@ -32,3 +32,11 @@ router
   .resolve();
 
 render();
+
+axios
+  .get("https://jsonplaceholder.typicode.com/posts")
+  .then(results => {
+    state.Position.posts = results.data;
+    console.log(results);
+  })
+  .catch(error => console.log(error));
