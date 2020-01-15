@@ -1,7 +1,7 @@
 export default `
 <h3>Please fill out the information below.</h3>
 
-<form class="rugbyForm">
+<form class="rugbyForm" id="theForm">
   <div>
     <label for="full-name">Full Name:</label>
     <input type="text" name="fullName" id="full-name" />
@@ -44,7 +44,7 @@ export default `
   </div>
 
   <div>
-    <button class="btn-quiz">Submit</button>
+    <button type ="submit" onclick="myfunction()" class="btn-quiz id="position-btn"">Submit</button>
   </div>
 </form>
 `;

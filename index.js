@@ -8,6 +8,8 @@ import Navigo from "navigo";
 
 import axios from "axios";
 
+//import { weightConverter, heightConverter } from "./lib";
+
 console.log("Navigo");
 
 console.log(location.pathname.slice(1));
@@ -23,6 +25,7 @@ ${Nav(state.Links)}
 ${Main(st)}
 ${Footer(st)}`;
   router.updatePageLinks();
+  //addEvents();
 }
 
 router
@@ -32,6 +35,14 @@ router
   .resolve();
 
 render();
+
+// function addEvents() {
+//   const heightCm = document.querySelector("#height-cm");
+//   heightCm.addEventListener("input", textInput => {
+//     console.log(textInput);
+//     return heightConverter(textInput);
+//   });
+// }
 
 axios
   .get("https://jsonplaceholder.typicode.com/posts")

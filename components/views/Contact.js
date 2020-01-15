@@ -1,6 +1,6 @@
 export default `
 <div>
-<form action="action_page.php" class ="contact">
+<form action="action_page.php" class ="contact" id="contactForm">
   <div>
     <label for= "First Name">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="First Name">
@@ -27,6 +27,6 @@ export default `
   </div>
 
   <div>
-    <button class="btn-quiz">Submit</button>
+    <button type ="submit" class="btn-quiz">Submit</button>
   </div>
 `;
