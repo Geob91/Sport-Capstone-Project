@@ -8,11 +8,9 @@ import Navigo from "navigo";
 
 import axios from "axios";
 
-//import { weightConverter, heightConverter } from "./lib";
+import { getInputValues } from "./lib";
 
-console.log("Navigo");
-
-console.log(location.pathname.slice(1));
+console.log(getInputValues);
 
 const router = new Navigo(location.origin);
 
@@ -25,29 +23,22 @@ ${Nav(state.Links)}
 ${Main(st)}
 ${Footer(st)}`;
   router.updatePageLinks();
-  //addEvents();
 }
 
 router
   .on(":page", params => {
     render(state[capitalize(params.page)]);
+    if (router.lastRouteResolved().url === "./position") {
+      getInputValues();
+    }
   })
+  .on("/", render())
   .resolve();
 
-render();
-
-// function addEvents() {
-//   const heightCm = document.querySelector("#height-cm");
-//   heightCm.addEventListener("input", textInput => {
-//     console.log(textInput);
-//     return heightConverter(textInput);
-//   });
-// }
-
-axios
-  .get("https://jsonplaceholder.typicode.com/posts")
-  .then(results => {
-    state.Position.posts = results.data;
-    console.log(results);
-  })
-  .catch(error => console.log(error));
+// axios
+//   .get("https://jsonplaceholder.typicode.com/posts")
+//   .then(results => {
+//     state.Position.posts = results.data;
+//     console.log(results);
+//   })
+//   .catch(error => console.log(error));
