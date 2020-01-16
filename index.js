@@ -6,30 +6,34 @@ import capitalize from "lodash.capitalize";
 
 import Navigo from "navigo";
 
-import axios from "axios";
+// import axios from "axios";
 
-import { getInputValues } from "./lib";
-
-console.log(getInputValues);
+import { getFormDataFromIDs } from "./lib";
 
 const router = new Navigo(location.origin);
 
-//console.log(Header, Footer, Main, Nav);
-
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
-${Header(st)}
-${Nav(state.Links)}
-${Main(st)}
-${Footer(st)}`;
+    ${Header(st)}
+    ${Nav(state.Links)}
+    ${Main(st)}
+    ${Footer(st)}`;
+
   router.updatePageLinks();
 }
 
 router
   .on(":page", params => {
     render(state[capitalize(params.page)]);
-    if (router.lastRouteResolved().url === "./position") {
-      getInputValues();
+    // Slice off the slash and check where we are.
+    if (capitalize(router.lastRouteResolved().url.slice(1)) === "Position") {
+      // There will be a 'form' on this 'page.'
+      document.querySelector("form").addEventListener("submit", event => {
+        event.preventDefault();
+
+        // TODO: Add this object to state and/or pass it into some fxn. to figure position, etc.
+        console.log(getFormDataFromIDs(event.target.elements));
+      });
     }
   })
   .on("/", render())
