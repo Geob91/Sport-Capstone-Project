@@ -26,25 +26,28 @@ export default `
 
 
   <div>
-    <label for="weight-Llbs">Weight lbs:</label>
-    <input type="number" name="weight" id="weight-Llbs" placeholder="lbs" />
+    <label for="weight-lbs">Weight lbs:</label>
+    <input type="number" name="weight" id="weight-lbs" placeholder="lbs" />
   </div>
 
-  <input id="weight-Kg" placeholder="Kg"/>
+  <div>
+    <label for="weight-kg">Weight KGs:</label>
+    <input id="weight-kg" placeholder="Kg"/>
+  </div>
 
   <div>
     <label for="speed">Speed:</label>
     <select name="speed" id="speed">
       <option value="very slow">Very Slow</option>
       <option value="slow">Slow</option>
-      <option value="Medium">Medium</option>
-      <option value="Fast">Fast</option>
-      <option value="Very Fast">Very Fast</option>
+      <option value="medium">Medium</option>
+      <option value="fast">Fast</option>
+      <option value="very fast">Very Fast</option>
     </select>
   </div>
 
   <div>
-    <button type ="submit" onclick="myfunction()" class="btn-quiz id="position-btn"">Submit</button>
+    <button type ="submit" class="btn-quiz id="position-btn"">Submit</button>
   </div>
 </form>
 `;
