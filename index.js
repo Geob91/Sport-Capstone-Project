@@ -10,18 +10,15 @@ import axios from "axios";
 
 import { getInputValues } from "./lib";
 
-console.log(getInputValues);
-
 const router = new Navigo(location.origin);
-
-//console.log(Header, Footer, Main, Nav);
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
-${Header(st)}
-${Nav(state.Links)}
-${Main(st)}
-${Footer(st)}`;
+    ${Header(st)}
+    ${Nav(state.Links)}
+    ${Main(st)}
+    ${Footer(st)}`;
+
   router.updatePageLinks();
 }
 
