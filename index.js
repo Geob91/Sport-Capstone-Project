@@ -25,7 +25,9 @@ function render(st = state.Home) {
 router
   .on(":page", params => {
     render(state[capitalize(params.page)]);
-    if (router.lastRouteResolved().url === "./position") {
+
+    // Slice off the slash and check where we are.
+    if (capitalize(router.lastRouteResolved().url.slice(1)) === "Position") {
       getInputValues();
     }
   })
