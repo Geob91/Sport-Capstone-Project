@@ -6,7 +6,7 @@ import capitalize from "lodash.capitalize";
 
 import Navigo from "navigo";
 
-import axios from "axios";
+// import axios from "axios";
 
 import { getFormDataFromIDs } from "./lib";
 
