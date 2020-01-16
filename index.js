@@ -8,7 +8,7 @@ import Navigo from "navigo";
 
 import axios from "axios";
 
-import { getInputValues } from "./lib";
+import { getFormDataFromIDs } from "./lib";
 
 const router = new Navigo(location.origin);
 
@@ -25,10 +25,15 @@ function render(st = state.Home) {
 router
   .on(":page", params => {
     render(state[capitalize(params.page)]);
-
     // Slice off the slash and check where we are.
     if (capitalize(router.lastRouteResolved().url.slice(1)) === "Position") {
-      getInputValues();
+      // There will be a 'form' on this 'page.'
+      document.querySelector("form").addEventListener("submit", event => {
+        event.preventDefault();
+
+        // TODO: Add this object to state and/or pass it into some fxn. to figure position, etc.
+        console.log(getFormDataFromIDs(event.target.elements));
+      });
     }
   })
   .on("/", render())
