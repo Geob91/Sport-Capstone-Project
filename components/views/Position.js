@@ -22,7 +22,7 @@ export default `
     />
   </div>
 
-  <input id="height-ft" placeholder="feet" />
+
 
 
   <div>
@@ -30,11 +30,7 @@ export default `
     <input type="number" name="weight" id="weight-lbs" placeholder="lbs" />
   </div>
 
-  <div>
-  <label for="weight-Kg">Weight KGs:</label>
-  <input id="weight-Kg" placeholder="Kg"/>
 
-  </div>
 
 
   <div>

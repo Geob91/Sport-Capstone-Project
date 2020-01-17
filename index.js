@@ -6,19 +6,11 @@ import capitalize from "lodash.capitalize";
 
 import Navigo from "navigo";
 
-import axios from "axios";
-
-//import { getInputValues } from "./lib";
-
 import { getFormDataFromIDs } from "./lib";
 
 import { findPosition } from "./lib";
 
-//console.log(getInputValues);
-
 const router = new Navigo(location.origin);
-
-//console.log(Header, Footer, Main, Nav);
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
@@ -42,23 +34,8 @@ router
           stuff.speed
         );
         document.querySelector("#positionPlay").innerHTML = `${test}`;
-        //  getInputValues();
-
-        // console.log(findPosition(event.target.elements["Height-cm"]));
-
-        // console.log(findPosition(event.target.elements["Weight-lbs"]));
-
-        // console.log(findPosition(event.target.elements["speed"]));
       });
     }
   })
   .on("/", render())
   .resolve();
-
-// axios
-//   .get("https://jsonplaceholder.typicode.com/posts")
-//   .then(results => {
-//     state.Position.posts = results.data;
-//     console.log(results);
-//   })
-//   .catch(error => console.log(error));
