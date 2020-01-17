@@ -8,9 +8,13 @@ import Navigo from "navigo";
 
 import axios from "axios";
 
-import { getInputValues } from "./lib";
+//import { getInputValues } from "./lib";
 
-console.log(getInputValues);
+import { getFormDataFromIDs } from "./lib";
+
+import { findPosition } from "./lib";
+
+//console.log(getInputValues);
 
 const router = new Navigo(location.origin);
 
@@ -28,8 +32,24 @@ ${Footer(st)}`;
 router
   .on(":page", params => {
     render(state[capitalize(params.page)]);
-    if (router.lastRouteResolved().url === "./position") {
-      getInputValues();
+    if (capitalize(router.lastRouteResolved().url.slice(1)) === "Position") {
+      document.querySelector("form").addEventListener("submit", event => {
+        event.preventDefault();
+        const stuff = getFormDataFromIDs(event.target.elements);
+        const test = findPosition(
+          stuff["height-cm"],
+          stuff["weight-lbs"],
+          stuff.speed
+        );
+        document.querySelector("#positionPlay").innerHTML = `${test}`;
+        //  getInputValues();
+
+        // console.log(findPosition(event.target.elements["Height-cm"]));
+
+        // console.log(findPosition(event.target.elements["Weight-lbs"]));
+
+        // console.log(findPosition(event.target.elements["speed"]));
+      });
     }
   })
   .on("/", render())
