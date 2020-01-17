@@ -27,13 +27,13 @@ router
     if (capitalize(router.lastRouteResolved().url.slice(1)) === "Position") {
       document.querySelector("form").addEventListener("submit", event => {
         event.preventDefault();
-        const stuff = getFormDataFromIDs(event.target.elements);
-        const test = findPosition(
-          stuff["height-cm"],
-          stuff["weight-lbs"],
-          stuff.speed
+        const metric = getFormDataFromIDs(event.target.elements);
+        const final = findPosition(
+          metric["height-cm"],
+          metric["weight-lbs"],
+          metric.speed
         );
-        document.querySelector("#positionPlay").innerHTML = `${test}`;
+        document.querySelector("#positionPlay").innerHTML = `${final}`;
       });
     }
   })
