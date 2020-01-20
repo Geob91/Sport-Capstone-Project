@@ -6,6 +6,7 @@ export default `
 
 <h3>The History of Rugby</h3>
 <p>Rugby is said to have originated in Rugby school, Warwickshire, England in the year 1823. During a game of football William Webb Ellis picked up a ball and started running with it. Though this is a myth the world cup is named the William Web Ellis cup. The first world cup was only played in 1987 with New Zealand the ultimate winners. The world cup is played every 4 years. New Zealand, South Africa have won it 3 times, Australia 2 and England the only northern hemisphere team to win it with 1.
+The most recent winners of the world cup are South Africa where they beat England in the final in Japan.
 </p>
 
 <p><a href ="https://www.world.rugby/rankings/mru?lang=en" target="_blank">Click here for the international rankings</a></p>
