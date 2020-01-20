@@ -1,6 +1,7 @@
 export default `
 <h3>Please fill out the information below.</h3>
 
+
 <form class="rugbyForm" id="theForm">
   <div>
     <label for="full-name">Full Name:</label>
@@ -44,15 +45,18 @@ export default `
     </select>
   </div>
 
-  <div id= "positionPlay">
-  <a href ="http://www.stlhornetsrugby.com/" target="_blank">St Louis rugby club</a>
-  <figure>
-        <img src="https://i2.wp.com/www.ruck.co.uk/wp-content/uploads/2018/01/rugby_positions_thumb-1.jpg?fit=1160%2C569&ssl=1" />
-        <figcaption>Rugby positions</figcaption>
-  </div>
 
   <div>
     <button type ="submit" class="btn-quiz id="position-btn"">Submit</button>
   </div>
+
+  <div id= "positionPlay">
+<a href ="http://www.stlhornetsrugby.com/" target="_blank">St Louis rugby club</a>
+<figure>
+      <img src="https://i2.wp.com/www.ruck.co.uk/wp-content/uploads/2018/01/rugby_positions_thumb-1.jpg?fit=1160%2C569&ssl=1" />
+      <figcaption>Rugby positions</figcaption>
+</div>
 </form>
+
+
 `;

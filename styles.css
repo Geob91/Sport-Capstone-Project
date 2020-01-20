@@ -20,7 +20,6 @@ body {
 }
 
 main {
-  /* TODO{george}: Play with gradients. (https://mycolor.space/gradient) (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds) */
   background-image: linear-gradient(
       to bottom,
       rgba(245, 246, 252, 0.52),
@@ -30,7 +29,6 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
-  text-shadow: 2px 2px #ff9671;
 }
 
 h1 {
@@ -61,6 +59,7 @@ p {
   font-size: 1.5rem;
   padding: 2rem;
   text-align: center;
+  text-shadow: 2px 2px  #ff9671 ;
 
 }
 
@@ -119,7 +118,7 @@ footer {
 }
 
 .flex div:hover {
-  background-color: #4e8397;
+  ;
 }
 
 figure img {
@@ -132,6 +131,17 @@ figure img {
 #rules {
   font-size: 20px;
   text-align: center;
+}
+
+#positionPlay{
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  font-size: 25px;
+
+}
+
+#positionPlay a{
+  font-size: 25px;
 }
 
 ol li {
@@ -159,11 +169,13 @@ form {
 }
 
 .rules-site button:hover {
-  background-color: #008bc6;
+  background-color:blue;
 }
 
 .rugbyForm {
   align-items: center;
+    padding-bottom: 2rem;
+
 }
 
 .rugbyForm label {
@@ -176,15 +188,16 @@ form {
 }
 
 .rugbyForm input {
-  border: 1px;
+  border: 10px;
   margin: 5px 10px 5px 0;
   padding: 10px;
   width: 700px;
 }
 
 .rugbyForm select {
-  border: 1px;
-  margin: 5px 10px 5px 0;
+  border: 10px;
+  margin: 5px 10px 5px 5px;
+  padding-bottom: 10rem;
   width: 100%;
   vertical-align: baseline;
 }
@@ -207,9 +220,7 @@ form {
   padding-right: 20px;
 }
 
-/* TODO{george}: Complete this CSS. */
-/* .contact label {
-} */
+
 
 .contact input {
   border: 50px;
@@ -229,5 +240,5 @@ form {
 }
 
 input[type="submit"]:hover {
-  background-color: #008bc6;
+  background-color: blue;
 }
