@@ -45,6 +45,10 @@ export default `
   </div>
 
   <div id= "positionPlay">
+  <a href ="http://www.stlhornetsrugby.com/" target="_blank">St Louis rugby club</a>
+  <figure>
+        <img src="https://i2.wp.com/www.ruck.co.uk/wp-content/uploads/2018/01/rugby_positions_thumb-1.jpg?fit=1160%2C569&ssl=1" />
+        <figcaption>Rugby positions</figcaption>
   </div>
 
   <div>
