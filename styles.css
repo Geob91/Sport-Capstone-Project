@@ -15,7 +15,7 @@ header {
 }
 
 body {
-  color: var(--primary-text-color);
+  color: #00008B;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -60,7 +60,7 @@ p {
   font-size: 1.5rem;
   padding: 2rem;
   text-align: center;
-  text-shadow: 2px 2px  #ff9671 ;
+  text-shadow: 2px 2px  #6495ED ;
 
 }
 
@@ -83,6 +83,7 @@ figcaption {
   font-size: 20px;
 }
 
+
 footer {
   background-color: var(--secondary-color);
 }
@@ -96,7 +97,7 @@ footer {
 }
 
 .button {
-  background-color: var(--secondary-color);
+  background-color:var(--primary-color);
   border-radius: 3px;
   padding: 0.5rem;
 }
@@ -110,6 +111,7 @@ footer {
   border-width: 5px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   font-size: 0.75em;
   justify-content: space-between;
   margin-bottom: 0px;
@@ -118,15 +120,23 @@ footer {
   text-align: center;
 }
 
+.rugbypic{
+  justify-content: flex-start;
+  width:33%;
+  overflow: auto;
+
+
+}
+
 .flex div:hover {
-  ;
+
+}
+figure{
+  overflow:auto;
 }
 
 figure img {
   height: 200px;
-  justify-content: flex-start;
-  max-width: 100%;
-  overflow: hidden;
 }
 
 #rules {
