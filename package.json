@@ -25,6 +25,7 @@
   "dependencies": {
     "axios": "^0.19.1",
     "lodash.capitalize": "^4.2.1",
-    "navigo": "^7.1.2"
+    "navigo": "^7.1.2",
+    "parcel": "^1.12.4"
   }
 }
