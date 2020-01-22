@@ -1,6 +1,6 @@
 export default `
 <div>
-<form method="POST" data-netlify="true" name="contact" class="contact" id="contactForm">
+<form method="POST" netlify="true" class ="hello" name= "contact" id="contactForm">
   <div>
     <label for= "First Name">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="First Name">
@@ -28,5 +28,6 @@ export default `
 
   <div>
     <button type ="submit" class="btn-quiz">Submit</button>
+  </div>
   </div>
 `;

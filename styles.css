@@ -223,7 +223,7 @@ form {
   background: blue;
 }
 
-.contact {
+.hello {
   display: block;
   max-width: 100%;
   padding-left: 20px;
@@ -233,7 +233,7 @@ form {
 
 
 
-.contact input {
+.hello input {
   border: 50px;
   display: inline-block;
   margin: 5px 20px 5px 5px;
@@ -242,7 +242,7 @@ form {
   width: 100%;
 }
 
-.contact textarea {
+.hello textarea {
   border: 1px;
   margin: 5px 10px 5px 0;
   padding: 10px;
