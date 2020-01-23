@@ -1,6 +1,6 @@
 export default `
 <div>
-<form method="POST" data-netlify="true" class ="hello" name= "contact" id="contactForm">
+<form method="POST" action="https://formspree.io/xdoejywr" class ="hello"  id="contactForm">
   <div>
     <label for= "First Name">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="First Name">
